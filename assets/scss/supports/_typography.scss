@@ -1,0 +1,29 @@
+/** Typography **/
+
+.white-font-color {
+  h2 {
+    color: $white-font;
+  }
+  h3 {
+    color: $white-font;
+  }
+  h4 {
+    color: $white-font;
+  }
+  p {
+    color: $white-font;
+  }
+  address {
+    color: $white-font;
+  }
+}
+
+.red-background {
+  background: $red-background;
+}
+
+.small-font {
+  p {
+    font-size: $small-font;
+  }
+}

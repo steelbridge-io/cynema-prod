@@ -1,0 +1,53 @@
+/** Cart */
+
+/* Removes cart Update Button */
+.cart {
+  tbody {
+    tr {
+      td.actions {
+        .button[name="update_cart"] {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.woocommerce-message {
+  border: 3px solid $red !important;
+}
+
+.cart-empty.woocommerce-info {
+  border: 3px solid $red !important;
+}
+
+.button.wc-forward, .button.wc-backward {
+  background-color: $red !important;
+  color: $white-font !important;
+  width: 30% !important;
+  text-align: center;
+}
+
+#custom-cart-template {
+  .cart {
+    color: $white-font;
+  }
+  .cart_totals {
+    color: $white-font;
+    h2 {
+      color: $white-font;
+    }
+  }
+
+  .checkout-button.button {
+    background-color: $red;
+    width: 100% !important;
+  }
+
+  .button.wc-backward {
+    background-color: $red;
+    color: $white-font;
+    width: 40%;
+    text-align: center;
+  }
+}

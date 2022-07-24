@@ -1,0 +1,23 @@
+/** Registration */
+
+#gform_wrapper_2 {
+  label {
+    color: $white-smoke;
+  }
+  .gfield_label {
+    color: $white-smoke;
+  }
+  #gform_submit_button_2 {
+    background-color: $red;
+    color: $white-smoke;
+    border-radius: 0;
+    border: none;
+    padding: .5em 2em;
+  }
+}
+
+#register-title {
+  h1 {
+    color: $white-smoke;
+  }
+}

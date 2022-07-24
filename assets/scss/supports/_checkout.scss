@@ -1,0 +1,69 @@
+/** Checkout */
+
+#check-out-template {
+  h3 {
+    color: $white-font;
+  }
+
+  label {
+    color: $white-font;
+  }
+
+  .woocommerce-checkout-review-order-table {
+    color: $white-font;
+  }
+
+  #payment {
+    background-color: $black;
+  }
+
+  .payment_box.payment_method_stripe {
+    background-color: $red !important;
+  }
+
+  p {
+    color: $white-font !important;
+  }
+
+  #place_order {
+    &.button {
+      background-color: $red !important;
+      color: $white-font !important;
+    }
+  }
+}
+
+.woocommerce-checkout #payment div.payment_box::before {
+  border: 1em solid $red !important;
+  border-right-color: transparent !important;
+  border-left-color: transparent !important;
+  border-top-color: transparent !important;
+}
+
+
+
+.woocommerce-checkout {
+  #page {
+    background-color: $black-background;
+    #primary {
+      .woocommerce {
+        padding: 5em 0;
+      }
+    }
+  }
+}
+
+
+
+#checkout-page {
+  .container {
+    &.checkout-container {
+      margin: 5em auto;
+      padding: 3.618em 0em;
+      background-color: $white-smoke !important;
+    }
+    .row {
+      padding: 3.618em 3em;
+    }
+  }
+}

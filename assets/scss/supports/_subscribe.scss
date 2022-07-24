@@ -1,0 +1,75 @@
+/** Subscribe */
+
+.mailpoet_submit {
+  border: 1px solid $red;
+}
+
+h1.mailpoet-heading {
+  padding: 0 !important;
+}
+
+#mailpoet_form_1 {
+  max-width: 786px !important;
+  margin: 0 auto !important;
+  input {
+    font-size: 12px !important;
+  }
+  form {
+    .mailpoet_form_columns {
+      justify-content: center;
+      .mailpoet_form_column {
+        flex-basis: 42% !important;
+      }
+    }
+  }
+}
+
+/** max width */
+@media (max-width: 575.98px) { }
+
+@media (max-width: 767.98px) {
+  .mailpoet_submit {
+    margin-top: 1em !important;
+  }
+  #mailpoet_form_1 {
+    width: 70% !important;
+    input {
+      font-size: 1.3rem !important;
+    }
+    form {
+      .mailpoet_form_columns {
+        display: initial !important;
+        .mailpoet_form_column {
+          flex-basis: 0 !important;
+        }
+        }
+      }
+    }
+
+  #join-cynematv.mailpoet-heading {
+    text-align: center !important;
+  }
+
+  #mailpoet_form_1 .mailpoet_form_column:not(:first-child) {
+    margin-left: 0px !important;
+  }
+}
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 1399.98px) { }
+
+
+/** min width */
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 1400px) { }
+

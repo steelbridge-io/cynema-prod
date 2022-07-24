@@ -1,0 +1,43 @@
+/** Video CSS */
+#masthead-video {
+  background-color: $black;
+  .header-video {
+    padding-top: 1.5em;
+  }
+}
+
+/*.cynematv_post_type-template-video-template {
+  .site {
+    .site-content {
+      .container {
+        .row {
+          .content-area {
+            .site-main {
+              .cynematv_post_type {
+                .entry-content {
+                  .vc_section {
+                    padding-top: 10px !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.video-section {
+  padding-top: 2.618em;
+  padding-bottom: 2.618em;
+}*/
+.movie.animate__animated.animate__fadeInUp {
+  animation-duration: 3s;
+}
+
+.lni-arrow-left::before {
+  color: $white-font;
+  font-size: 3rem;
+  line-height: .5;
+  font-weight: 900;
+}

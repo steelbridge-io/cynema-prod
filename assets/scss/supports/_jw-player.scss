@@ -1,0 +1,255 @@
+/* Set the idle overlay to transparent white */
+.jwplayer.jw-state-idle .jw-controls {
+  background: rgba(0,0,0,.2);
+}
+
+.jwplayer .jw-settings-menu .jw-settings-topbar {
+  background-color: rgba(0,0,0,0.5);
+}
+
+/* Hide titles on complete */
+.jwplayer.jw-state-complete .jw-title .jw-title-primary,
+.jwplayer.jw-state-complete .jw-title .jw-title-secondary {
+  display: none;
+}
+
+/* Round, white play & restart buttons with black icons */
+.jwplayer .jw-display-controls .jw-display-icon-container,
+.jwplayer .jw-display-controls .jw-display-icon-container {
+  background-color: white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.jwplayer .jw-display-controls .jw-display-icon-container .jw-icon,
+.jwplayer .jw-display-controls .jw-display-icon-container .jw-icon {
+  color: $black;
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+}
+
+.jwplayer .jw-display-controls .jw-display-icon-container .jw-icon:hover,
+.jwplayer .jw-display-controls .jw-display-icon-container .jw-icon:hover {
+  color: $red;
+}
+
+/* Change play button colors on idle state, handle hover transitions */
+.jwplayer.jw-state-idle .jw-display-controls .jw-display-icon-container {
+  background-color: $red;
+  height: 80px;
+  width: 80px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+.jwplayer.jw-state-idle .jw-display-controls .jw-display-icon-container .jw-icon {
+  color: $white-font;
+  height: 40px;
+  width: 40px;
+  padding: 20px;
+}
+
+
+/* Shrink play button on smaller breakpoints */
+.jwplayer.jw-state-idle.jw-breakpoint-3 .jw-display-controls .jw-display-icon-container,
+.jwplayer.jw-state-idle.jw-breakpoint-2 .jw-display-controls .jw-display-icon-container  {
+  height: 60px;
+  width: 60px;
+}
+
+.jwplayer.jw-state-idle.jw-breakpoint-1 .jw-display-controls .jw-display-icon-container,
+.jwplayer.jw-state-idle.jw-breakpoint-0 .jw-display-controls .jw-display-icon-container {
+  height: 40px;
+  width: 40px;
+}
+
+.jwplayer.jw-state-idle.jw-breakpoint-3 .jw-display-controls .jw-display-icon-container .jw-icon,
+.jwplayer.jw-state-idle.jw-breakpoint-2 .jw-display-controls .jw-display-icon-container .jw-icon {
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+}
+
+.jwplayer.jw-state-idle.jw-breakpoint-1 .jw-display-controls .jw-display-icon-container .jw-icon,
+.jwplayer.jw-state-idle.jw-breakpoint-0 .jw-display-controls .jw-display-icon-container .jw-icon {
+  height: 20px;
+  width: 20px;
+  padding: 10px;
+}
+
+.jwplayer.jw-state-idle .jw-display-controls .jw-display-icon-container:hover {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.jwplayer.jw-state-idle .jw-display-controls .jw-display-icon-container .jw-icon:hover {
+  color: #fff;
+}
+
+.jwplayer.jw-state-paused .jw-controls {
+  background-color: rgba(147, 221, 230, .3);
+}
+
+
+/* Customize font style and positioning for titles */
+.jwplayer.jw-state-idle .jw-title {
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  align-items: start;
+}
+
+/* Apply new styles to video title and description, handle transitions */
+.jwplayer .jw-title-primary {
+  font-size: 48px;
+  padding: 30px;
+  color: $white-font;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  padding-bottom: 15px;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+}
+
+/* Apple new styles to video description */
+.jwplayer .jw-title-secondary {
+  font-size: 18px;
+  max-width: 70%;
+  font-weight: 500;
+  opacity: 0;
+  margin: 0 auto;
+  color: $white-font;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  white-space: normal;
+  line-height: 1.3;
+  -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+  transition: opacity 0.2s, transform 0.35s;
+  -webkit-transition-delay: 0.08s;
+  transition-delay: 0.08s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+}
+
+/* Decrease font size on medium-small breakpoints */
+.jwplayer.jw-breakpoint-3 .jw-title-primary,
+.jwplayer.jw-breakpoint-2 .jw-title-primary,
+.jwplayer.jw-breakpoint-1 .jw-title-primary,
+.jwplayer.jw-breakpoint-0 .jw-title-primary {
+  font-size: 22px;
+}
+
+.jwplayer.jw-breakpoint-3 .jw-title-secondary,
+.jwplayer.jw-breakpoint-2 .jw-title-secondary {
+  font-size: 14px;
+}
+
+/* Hide the description on smallest breakpoints */
+.jwplayer.jw-breakpoint-1 .jw-title-secondary,
+.jwplayer.jw-breakpoint-0 .jw-title-secondary {
+  display: none;
+}
+
+/* Change colors and remove gradient shadow for control bar, change icon color on pause */
+.jwplayer .jw-display {
+  padding-bottom: 45px;
+}
+
+.jwplayer .jw-controlbar {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.jwplayer .jw-controlbar .jw-button-container .jw-button-color {
+  color: #737373;
+}
+
+.jwplayer.jw-state-paused .jw-controlbar .jw-button-container .jw-button-color {
+  color: #737373;
+}
+
+.jwplayer .jw-controlbar .jw-button-container .jw-button-color:hover {
+  color: $white-font;
+}
+
+
+/* Move tooltips closer to control bar with inline timeslider, change colors, round corners, remove shadow */
+.jwplayer .jw-controlbar .jw-tooltip {
+  bottom: 70%;
+  box-shadow: none;
+}
+
+.jwplayer .jw-controlbar .jw-tooltip.jw-open {
+  border-radius: 5px;
+  color: $white-font;
+}
+
+.jwplayer .jw-controlbar .jw-tooltip .jw-text {
+  background-color: $white-font;
+  border-radius: 5px;
+  border: 0;
+}
+
+.jwplayer .jw-controlbar .jw-text {
+  color: $white-font;
+}
+
+.jwplayer .jw-volume-tip,
+.jwplayer .jw-time-tip {
+  padding-bottom: 0;
+}
+
+
+/* Customize colors of volume control knob */
+.jwplayer .jw-overlay .jw-slider-volume .jw-slider-container .jw-knob {
+  background-color: $red;
+}
+
+
+/* Customize colors of timeslider */
+.jwplayer .jw-controlbar .jw-slider-time .jw-slider-container .jw-rail {
+  background-color: #1E1E1E;
+}
+
+.jwplayer .jw-controlbar .jw-slider-time .jw-slider-container .jw-buffer {
+  background-color: $black;
+}
+
+.jwplayer .jw-controlbar .jw-slider-time .jw-slider-container .jw-progress {
+  background-color: $red;
+}
+
+.jwplayer .jw-controlbar .jw-slider-time .jw-slider-container .jw-knob {
+  background-color: $red;
+}
+
+
+/* Customize colors/opacity of the settings menu */
+.jwplayer .jw-settings-menu {
+  background-color: transparent;
+}
+
+.jwplayer .jw-settings-menu .jw-settings-topbar {
+  background-color:rgba(0,0,0,0.2);
+}
+
+.jwplayer .jw-settings-menu .jw-settings-topbar .jw-icon:hover {
+  color: $white-font;
+}
+
+.jwplayer .jw-settings-menu .jw-settings-submenu {
+  background-color: rgba(255, 255, 255, .65);
+}
+
+.jwplayer .jw-settings-menu .jw-settings-content-item {
+  color: $white-font;
+}
+
+.jwplayer .jw-settings-menu .jw-settings-content-item:hover,
+.jwplayer .jw-settings-menu .jw-settings-item-active {
+  color: #e5322c;
+  font-weight: bold;
+}

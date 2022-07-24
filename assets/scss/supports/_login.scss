@@ -1,0 +1,92 @@
+/** Login CSS */
+
+#login-wrapper {
+  .pieregWrapper input[type="submit"] {
+    color: $dark-font;
+    background: $red-background;
+    border-bottom: none;
+  }
+  .pieregWrapper input[type="submit"]:hover {
+    border: 2px solid $white-border;
+    background: $red-background;
+  }
+}
+
+.woocommerce-form.woocommerce-form-login.login {
+  border: none;
+  width: 585px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .password-input {
+    width: 100%;
+  }
+  .woocommerce-form-row {
+    label {
+      color: $white-font;
+    }
+  }
+}
+.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+  span {
+    color: $white-font;
+  }
+}
+.woocommerce-form__label.woocommerce-form__label-for-checkbox.woocommerce-form-login__rememberme {
+  width: 70%;
+}
+.woocommerce-button.button.woocommerce-form-login__submit {
+  float: none;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+}
+.login-form {
+  width: 487px;
+  margin-left: auto;
+  margin-right: auto;
+  .woocommerce {
+    h2 {
+      text-align: center;
+    }
+    .woocommerce-form {
+      .form-row {
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+
+.woocommerce-LostPassword.lost_password {
+  text-align: center;
+  a {
+    color: $red;
+    text-align: center;
+  }
+}
+
+  .woocommerce-LostPassword.lost_password a:hover {
+    color: $red;
+  }
+  #username.woocommerce-Input.input-text.form-control,
+  #password.woocommerce-Input.input-text.form-control{
+    box-shadow: rgba(249, 0, 0, 1) 0px 5px 15px !important;
+    border-radius: 0;
+  }
+  .woocommerce-form-login {
+    .woocommerce-form-row {
+      margin: 0 auto !important;
+    }
+    .form-row {
+      width: 55%;
+      margin: 0 auto !important;
+    }
+  }
+
+  .woocommerce-LostPassword.lost_password {
+    margin-top: 1.618em;
+  }
+
+.woocommerce-Input.woocommerce-Input--text.input-text.form-control {
+  border-radius: 0;
+}

@@ -1,0 +1,27 @@
+/** Single Product */
+#single-product-title {
+  h1 {
+    font-size: 2rem;
+    color: $white-font;
+  }
+  .price {
+    color: $red;
+  }
+}
+
+#single-product-content {
+  #single-product-left-column {
+    .single_add_to_cart_button.button {
+      background-color: $red;
+    }
+    .price {
+      color: $red;
+      font-weight: bolder;
+    }
+  }
+  #single-product-right-column {
+    p {
+      color: $white-font;
+    }
+  }
+}

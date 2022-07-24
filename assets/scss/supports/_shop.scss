@@ -1,0 +1,27 @@
+/** Shop CSS */
+
+.vc_btn3.vc_btn3-color-danger, .vc_btn3.vc_btn3-color-danger.vc_btn3-style-flat {
+  background-color: $red !important;
+}
+
+.subscription-wrap {
+  .woocommerce {
+    .woocommerce-result-count {
+      display: none;
+    }
+    form.woocommerce-ordering {
+      display: none;
+    }
+  }
+  .woocommerce-loop-product__title {
+    color: $red !important;
+  }
+  .price {
+    color: $red !important;
+  }
+  .button {
+    background-color: $red !important;
+    color: $white-font !important;
+    width: 100%;
+  }
+}

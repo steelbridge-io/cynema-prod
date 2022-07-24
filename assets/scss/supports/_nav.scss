@@ -1,0 +1,155 @@
+/** Nav */
+
+.menu-item.nav-item.wpmenucartli {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+a.wpmenucart-contents {
+  color: $red;
+  &:hover {
+    color: $red-hover
+  }
+}
+
+.show-logout {
+  display: none;
+}
+
+.show-my-account {
+  display: none;
+}
+
+.logged-in {
+  .show-login {
+    display: none;
+  }
+  .show-logout {
+    display: block;
+  }
+  .show-register {
+    display: none;
+  }
+  .show-my-account {
+    display: block;
+  }
+}
+
+.navbar-toggler-icon {
+  color: $red;
+}
+
+body {
+  &.search {
+    header {
+      &#masthead {
+        background-color: $black;
+      }
+    }
+  }
+  header {
+    &#masthead {
+      background-color: transparent;
+      box-shadow: none !important;
+      padding: 0.74rem 1rem;
+      position: absolute;
+      z-index: 999;
+      width: 100%;
+      top: 0;
+
+      .nav-link {
+        width: 169px;
+        height: 50px;
+        display: flex;
+        border: 3px solid #F90000 !important;
+        justify-content: center;
+        align-items: center;
+        color: #F2F2F2 !important;
+        font-size: 18px;
+        padding-right: 0;
+        transition: 1.2s;
+      }
+
+      .nav-link:hover {
+        border: 3px solid #fff !important;
+        color: #F90000 !important;
+        transition: 1.2s;
+      }
+    }
+  }
+}
+
+#menu-header-menu {
+  li:nth-child(n+2) {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  li:nth-child(1) {
+    margin-right: 5px;
+  }
+}
+
+
+#menu-header-menu {
+
+  #menu-item-190,
+  #menu-item-345 {
+    display: none;
+  }
+
+}
+
+.logged-in {
+  #menu-header-menu {
+
+    #menu-item-190,
+    #menu-item-345 {
+      display: initial;
+    }
+
+  }
+}
+
+.navbar-collapse.collapse.show {
+  background-color: $black;
+}
+
+.container.wpb_column.vc_column_container.vc_col-sm-12 {
+  float: none;
+}
+
+/** max width */
+@media (max-width: 575.98px) { }
+
+@media (max-width: 767.98px) { }
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 1199.98px) {
+  body header#masthead .nav-link {
+    border-color: transparent !important;
+    &.nav-link:hover {
+      border-color: transparent !important;
+    }
+  }
+  #menu-header-menu {
+    &.navbar-nav {
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 1399.98px) { }
+
+
+/** min width */
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 1400px) { }
+
+

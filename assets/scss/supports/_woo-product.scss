@@ -1,0 +1,82 @@
+/** WooCommerce Product Template */
+
+.woocommerce-tabs {
+ &.wc-tabs-wrapper {
+   max-width: 1109px;
+   width: 100%;
+   margin: 0 auto;
+   h2 {
+     color: $white-smoke;
+   }
+   p {
+     color: $white-smoke;
+   }
+ }
+}
+
+.woocommerce-page-builder-template {
+  &.product {
+    .related.products {
+      max-width: 1109px;
+      width: 100%;
+      margin: 0 auto;
+      h2 {
+        color: $white-smoke;
+      }
+    }
+  }
+}
+
+.rev-btn {
+  a.button {
+    background-color: $black-background !important;
+    color: $white-font !important;
+  }
+}
+
+.product-template-default {
+
+  background: $black-background;
+
+  #content {
+    #primary {
+      margin: 0 auto;
+    }
+    #main {
+      background-color: $white-smoke;
+      padding: 1.618em;
+      margin-top: 10em;
+      margin-bottom: 10em;
+    }
+  }
+
+}
+
+.woocommerce button.button.alt, .woocommerce input.button.alt {
+  background-color: $black;
+  color: $white-font;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+}
+
+.woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: $black-hover;
+}
+
+.tab-container {
+  .vc_tta-tabs-container {
+    .vc_tta-tabs-list {
+      .vc_tta-tab {
+        a {
+          padding: 1em 1em;
+          .vc_tta-icon {
+            margin-left: 56px;
+          }
+          span {
+            margin-right: 56px;
+          }
+        }
+      }
+    }
+  }
+}

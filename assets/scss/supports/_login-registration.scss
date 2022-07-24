@@ -1,0 +1,22 @@
+/** Login CSS */
+
+#login-wrapper {
+  .pieregWrapper input[type="submit"] {
+    color: $dark-font;
+    background: $red-background;
+    border-bottom: none;
+  }
+  .pieregWrapper input[type="submit"]:hover {
+    border: 2px solid $white-border;
+    background: $red-background;
+  }
+}
+
+#login-form-wrapper {
+  .container {
+    width: 33%;
+  }
+  p {
+    color: $white-font;
+  }
+}

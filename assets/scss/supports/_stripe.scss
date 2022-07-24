@@ -1,0 +1,15 @@
+/** Stripe CSS */
+.stripe-card-group {
+  width: 50%;
+}
+#stripe-exp-element {
+  width: 85px;
+}
+
+#stripe-cvc-element {
+  width: 85px;
+}
+
+#wc-stripe-payment-request-wrapper {
+  padding-top: 0 !important;
+}

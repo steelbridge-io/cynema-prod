@@ -1,0 +1,34 @@
+/** Search */
+
+body.search {
+  #main {
+    min-height: 100vh;
+  }
+}
+
+body.search {
+  background-color: $black;
+  #page {
+    #primary {
+      margin: 0 auto;
+    }
+  }
+  #main {
+    &.site-main {
+      margin: 7em auto 0 auto;
+
+      h1.page-title {
+        color: $white-smoke;
+      }
+
+      p {
+        color: $white-smoke;
+      }
+      form {
+        input.search-submit {
+          color: $white-smoke;
+        }
+      }
+    }
+  }
+}

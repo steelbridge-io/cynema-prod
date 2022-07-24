@@ -1,0 +1,148 @@
+/** Contact Page CSS */
+
+#gform_wrapper_1 {
+  h1, h2, h3, h4, h5 {
+    color: $white-font;
+  }
+  p {
+    color: $white-font;
+  }
+}
+
+#gform_fields_1 {
+  .gfield_label {
+    color: $white-font;
+  }
+  label {
+    color: $white-font !important;
+  }
+}
+
+.contact-container {
+  max-width: 1500px;
+}
+
+section.vc_section.sec-banenr-hdr {
+  background-size: 100% 100% !important;
+}
+.sec-contactus h5 {
+  margin-bottom: 28px !important;
+}
+.sec-contactus p {
+  color: $white-font;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Lato', sans-serif !important;
+}
+.sec-contactus ul.contact-information li,
+.sec-contactus ul.contact-information li a,ul.soical_info li a{
+  color: $white-font;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+}
+.sec-contactus ul.contact-information li{
+  position: relative;
+  padding-left: 26px;
+  margin-bottom: 12px;
+}
+.sec-contactus ul.contact-information li:first-child:before,
+.sec-contactus ul.contact-information li:nth-child(2):before,
+.sec-contactus ul.contact-information li:nth-child(3):before {
+  content: "\f3c5";
+  font-weight: 800;
+  font-family: "Font Awesome 5 Free";
+  position: absolute;
+  left: 0;
+  font-size: 16px;
+  color: #13090d;
+}
+.sec-contactus ul.contact-information li:nth-child(2):before{
+  content: "\f879";
+}
+.sec-contactus ul.contact-information li:nth-child(3):before {
+  content: "\f0e0";
+}
+.sec-contactus .form-control {
+  height: 51px;
+  margin-bottom: 10px !important;
+  border: 1px solid #d6d6d6;
+  color: #000000;
+  box-shadow: none !important;
+  font-family: 'Lato';
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 20px;
+}
+.sec-contactus .form-control::placeholder {
+  color: #c0c0c0;
+}
+.sec-contactus .box-lft {
+  padding-right: 5px;
+}
+.sec-contactus .box-rt {
+  padding-left: 5px;
+}
+.sec-contactus textarea {
+  height: 180px !important;
+  resize: none;
+  padding: 10px 20px 0px !important;
+}
+.sec-contactus .leav-hdn:before {
+  content: "\f0e0";
+  font-weight: 800;
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  left: 0;
+}
+.sec-contactus .leav-hdn {
+  padding-left: 40px;
+  position: relative;
+}
+.sec-contactus .wpcf7-acceptance span {
+  margin: 8px 10px 10px 30px !important;
+}
+.sec-contactus span.wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+}
+.sec-contactus span.wpcf7-list-item-label {
+  color: #c0c0c0;
+  font-size: 14px;
+  font-family: 'Lato';
+}
+.sec-contactus span.wpcf7-not-valid-tip {
+  display: none;
+}
+.sec-contactus .get-btn{
+  background: transparent !important;
+  color: $white-font !important;
+}
+/* .sec-contactus .form-mark ul.zoom-social-icons-list {
+    display: flex;
+    flex-direction: column;
+} */
+/* .sec-contactus .form-mark ul.zoom-social-icons-list li {
+    position: relative;
+} */
+/* .sec-contactus .form-mark ul.zoom-social-icons-list li:first-child:after,
+.sec-contactus .form-mark ul.zoom-social-icons-list li:nth-child(2):after,
+.sec-contactus .form-mark ul.zoom-social-icons-list li:nth-child(3):after,
+.sec-contactus .form-mark ul.zoom-social-icons-list li:nth-child(4):after {
+    content: "Facebook";
+    font-size: 14px;
+    color: #707070;
+    padding-left: 0px;
+    position: absolute;
+    top: 4px;
+    font-family: 'Lato';
+}
+.sec-contactus .form-mark ul.zoom-social-icons-list li:nth-child(2):after{
+     content: "Twitter";
+}
+.sec-contactus .form-mark ul.zoom-social-icons-list li:nth-child(3):after{
+     content: "YouTube";
+}
+.sec-contactus .form-mark ul.zoom-social-icons-list li:nth-child(4):after{
+     content: "Linkedin";
+} */
