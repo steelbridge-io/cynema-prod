@@ -3,9 +3,7 @@
 Please replace child theme name and directory name depends on what website you are using this. Thanks!
 
 ----------
-06-04-2019
+07-23-2022
 ----------
 
-- Add [site_year] shortcode, dynamically get's the year
-- Add /assets/ folder for the custom scripts
-- Add /includes/ folder with array helper for custom shortcodes
+Customized theme by Chris Parsons
