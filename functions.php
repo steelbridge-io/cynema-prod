@@ -109,8 +109,8 @@ function woo_cat_slider_show_in_archive() {
  */
 add_action('admin_menu', 'cynema_remove_menus');
 function cynema_remove_menus() {
-	//remove_menu_page('themes.php');
-	//remove_menu_page('plugins.php');
+	remove_menu_page('themes.php');
+	remove_menu_page('plugins.php');
 }
 
 /**
