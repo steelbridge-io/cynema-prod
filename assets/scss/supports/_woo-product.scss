@@ -2,6 +2,15 @@
 
 .woocommerce-tabs {display:none;}
 
+p.stars {
+  a {
+    color: $red;
+  }
+  &:hover {
+    color: $red-hover;
+  }
+}
+
 #commentform {
   .comment-form-rating {
     label {
