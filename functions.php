@@ -122,5 +122,21 @@ function auto_redirect_after_logout(){
 	wp_safe_redirect( home_url() );
 	exit;
 }
+/**
+ * Remove image zoom woocommerce
+ */
+add_action( 'wp', 'custom_remove_product_zoom' );
+
+function custom_remove_product_zoom() {
+	remove_theme_support( 'wc-product-gallery-zoom' );
+}
+/**
+ * Remove product image lightbox
+ */
+//add_action( 'wp', 'my_remove_lightbox', 99 );
+function my_remove_lightbox() {
+	remove_theme_support( 'wc-product-gallery-lightbox' );
+}
+
 
 

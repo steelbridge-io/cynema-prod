@@ -1,5 +1,26 @@
 /** WooCommerce Product Template */
 
+.woocommerce-tabs {display:none;}
+
+#commentform {
+  .comment-form-rating {
+    label {
+      color: $white-smoke;
+    }
+  }
+}
+#respond {
+  #reply-title {
+    color: $white-smoke !important;
+  }
+}
+
+body.logged-in.admin-bar {
+  header {
+    margin-top: 32px;
+  }
+}
+
 .woocommerce-tabs {
  &.wc-tabs-wrapper {
    max-width: 1109px;
@@ -38,6 +59,10 @@
 
   background: $black-background;
 
+  .woocommerce-product-gallery__image, img.wp-post-image {
+    pointer-events: none !important;
+  }
+
   #content {
     #primary {
       margin: 0 auto;
@@ -48,6 +73,30 @@
       margin-top: 10em;
       margin-bottom: 10em;
     }
+  }
+  h1, h2, h3, h4, h5, h6 {
+    color: $white-smoke;
+  }
+
+  p {
+    color: $white-smoke;
+  }
+
+  .woocommerce-Tabs-panel {
+    padding: 0.618em !important;
+    /*h2 {
+      display: none;
+    }*/
+  }
+  label.screen-reader-text {
+    position: inherit !important;
+    color: $white-smoke !important;
+    overflow: inherit !important;
+    width: auto !important;
+    clip-path: none !important;
+  }
+  .quantity {
+    margin-bottom: 2em !important;
   }
 
 }
