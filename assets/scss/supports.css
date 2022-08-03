@@ -384,6 +384,16 @@ body header#masthead .nav-link:hover {
   display: none;
 }
 
+.wqv-product-content .woocommerce-product-details__short-description h2 {
+  color: #000000;
+}
+.wqv-product-content .woocommerce-product-details__short-description p {
+  color: #000000;
+}
+.wqv-product-content a {
+  color: #CC0000;
+}
+
 p.stars a {
   color: #CC0000;
 }

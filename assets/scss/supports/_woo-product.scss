@@ -2,6 +2,21 @@
 
 .woocommerce-tabs {display:none;}
 
+.wqv-product-content {
+  .woocommerce-product-details__short-description {
+    h2 {
+      color: $black;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+  a {
+    color: $red;
+  }
+}
+
 p.stars {
   a {
     color: $red;
