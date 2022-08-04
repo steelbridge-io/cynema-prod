@@ -11,6 +11,9 @@ body.search {
   #page {
     #primary {
       margin: 0 auto;
+      .entry-title a {
+        color: $red;
+      }
     }
   }
   #main {

@@ -1450,6 +1450,9 @@ body.search {
 body.search #page #primary {
   margin: 0 auto;
 }
+body.search #page #primary .entry-title a {
+  color: #CC0000;
+}
 body.search #main.site-main {
   margin: 7em auto 0 auto;
 }
