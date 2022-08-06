@@ -1,5 +1,43 @@
 /** Account CSS */
 
+.page-id-176 {
+  #page {
+    #primary {
+      .vc_tta-panels-container {
+        .password-input {
+          width: 100%;
+        }
+      }
+      input {
+        border-radius: 0;
+      }
+      button[type="submit"] {
+        border-radius: 0;
+      }
+      form {
+        margin: 10em auto 0 auto;
+        background-color: rgba(0,0,0,0.8);
+        padding: 1.618em;
+        h3 {
+          color: $white-smoke;
+        }
+        label {
+          color: $white-smoke;
+        }
+        .woocommerce-input-wrapper {
+          width: 100%;
+        }
+        button[type="submit"] {
+          background-color: $red;
+          border-radius: 0;
+          border-color: $red;
+          color: $white-smoke;
+        }
+      }
+    }
+  }
+}
+
 .woocommerce-EditAccountForm.edit-account.dtwpb-form-edit-account {
   .wpb_column {
     .vc_column-inner {

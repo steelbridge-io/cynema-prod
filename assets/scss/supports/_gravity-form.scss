@@ -1,0 +1,23 @@
+/** Gravity Form */
+
+.gform_confirmation_wrapper {
+  .gform_confirmation_message {
+    color: $white-smoke;
+  }
+}
+
+.gfield_password_strength.strong {
+  background-color: $green;
+}
+
+.gfield_password_strength.short {
+  background-color: $medium-red;
+}
+
+.gfield_password_strength.bad {
+  background-color: $dark-red;
+}
+
+.gfield_password_strength.good {
+  background-color: $yellow;
+}

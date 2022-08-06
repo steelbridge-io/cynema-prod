@@ -1,0 +1,55 @@
+/** Billing */
+
+.page-id-175 {
+  .woocommerce-billing-fields {
+    .woocommerce-billing-fields__field-wrapper {
+      .woocommerce-input-wrapper {
+        width: 100%;
+      }
+    }
+
+  }
+  #check-out-template {
+    display: flex;
+    .wpb_column {
+      display: flex;
+    }
+  }
+}
+
+/** max width */
+@media (max-width: 1399.98px) { }
+
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 767.98px) {
+  .page-id-175 {
+    #check-out-template {
+      display: block;
+      .wpb_column {
+        display: block;
+      }
+      .wpb_wrapper {
+        padding: 1em;
+      }
+    }
+  }
+}
+
+@media (max-width: 575.98px) { }
+
+
+/** min width */
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 1400px) { }
+
+

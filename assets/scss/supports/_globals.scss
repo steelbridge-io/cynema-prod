@@ -1,5 +1,31 @@
 /** Global CSS */
 
+.page-id-14 {
+  background-color: #000000;
+  #page {
+    min-height: 100vh;
+
+    #content {
+      width: 80%;
+      max-width: 1700px;
+      margin: 10em auto 0 auto;
+
+      h2 {
+        color: $white-smoke;
+      }
+      p {
+        color: $white-smoke;
+      }
+      a {
+        color: $red;
+      }
+      .h3 {
+        color: $white-smoke;
+      }
+    }
+  }
+}
+
 .no-padding {
   padding: 0 !important;
 }

@@ -1,5 +1,15 @@
 /** Login CSS */
 
+.woocommerce-error::before {
+  display: none;
+}
+
+.woocommerce-error {
+  li {
+    padding-left: 1em !important;
+  }
+}
+
 #login-wrapper {
   .pieregWrapper input[type="submit"] {
     color: $dark-font;
