@@ -61,7 +61,7 @@
     
   }
   
-  if ( ! function_exists( 'custom_video_taxonomy' ) ) {
+  //if ( ! function_exists( 'custom_video_taxonomy' ) ) {
 
 // Register Custom Taxonomy
     function custom_video_taxonomy() {
@@ -69,7 +69,7 @@
       $labels = array(
         'name'                       => _x( 'Video Categories', 'Taxonomy General Name', 'wp-bootstrap-starter' ),
         'singular_name'              => _x( 'Video Category', 'Taxonomy Singular Name', 'wp-bootstrap-starter' ),
-        'menu_name'                  => __( 'Video Category', 'wp-bootstrap-starter' ),
+        'menu_name'                  => __( 'Video Categories', 'wp-bootstrap-starter' ),
         'all_items'                  => __( 'All Items', 'wp-bootstrap-starter' ),
         'parent_item'                => __( 'Parent Item', 'wp-bootstrap-starter' ),
         'parent_item_colon'          => __( 'Parent Item:', 'wp-bootstrap-starter' ),
@@ -90,18 +90,21 @@
       );
       $args = array(
         'labels'                     => $labels,
+		'description'                => false,
         'hierarchical'               => true,
         'public'                     => true,
+		'publicly_queryable'         => true,
         'show_ui'                    => true,
+		'show_in_menu'               => true,
         'show_admin_column'          => true,
         'show_in_nav_menus'          => true,
         'show_tagcloud'              => true,
-        'update_count_callback'      => 'video_update',
+		'query_var'                  => true,
         'show_in_rest'               => true,
       );
       register_taxonomy( 'video_taxonomy', array( 'cynematv_post_type' ), $args );
-      
+
     }
     add_action( 'init', 'custom_video_taxonomy', 0 );
     
-  }
+  //}

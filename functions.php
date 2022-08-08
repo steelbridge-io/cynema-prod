@@ -139,4 +139,3 @@ function my_remove_lightbox() {
 }
 
 
-
