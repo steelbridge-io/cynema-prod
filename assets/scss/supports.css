@@ -1598,6 +1598,19 @@ body.search #main.site-main form input.search-submit {
   }
 }
 /** min width */
+/** Movies */
+.wpspro-pagination.wpspro-align-center ul li {
+  display: block;
+}
+.wpspro-pagination.wpspro-align-center ul li a.page-numbers .fa {
+  margin-top: 0px;
+  font-size: 2rem;
+}
+
+#wpsp-slider-section.wpsp-slider-section1150 .wpspro-pagination ul li .page-numbers {
+  border-color: #CC0000 !important;
+}
+
 /** Helpers */
 .mt-1618 {
   margin-top: 1.618em;

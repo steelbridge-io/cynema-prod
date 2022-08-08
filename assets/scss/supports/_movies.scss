@@ -1,0 +1,19 @@
+/** Movies */
+
+.wpspro-pagination.wpspro-align-center {
+  ul {
+    li {
+      display: block;
+      a.page-numbers {
+        .fa {
+          margin-top: 0px;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+#wpsp-slider-section.wpsp-slider-section1150 .wpspro-pagination ul li .page-numbers {
+  border-color: $red !important;
+}
