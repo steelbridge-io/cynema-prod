@@ -17,3 +17,33 @@
 #wpsp-slider-section.wpsp-slider-section1150 .wpspro-pagination ul li .page-numbers {
   border-color: $red !important;
 }
+
+.wpsp-slider-section #sp-woo-product-slider-pro1150.wpsp-product-section .wpsp-product .product-details {
+  background-color: $black !important;
+}
+
+.product-details {
+  .product-details-inner {
+    .wpsp-product-title {
+      a {
+        color: $red !important;
+      }
+    }
+
+    .wpsp-product-price {
+      .woocommerce-Price-amount.amount {
+        color: $red !important;
+      }
+    }
+
+    .wpsp-cart-button {
+      .product.woocommerce.add_to_cart_inline {
+        a.button.add_to_cart_button {
+          color: $white-smoke !important;
+          border-color: $white-border !important;
+        }
+      }
+    }
+  }
+}
+

@@ -1,6 +1,33 @@
 /** Billing */
 
 .page-id-175 {
+
+  h2 {
+    color: $white-smoke;
+  }
+
+  th {
+    color: $white-smoke;
+  }
+
+  bdi {
+    color: $white-smoke;
+  }
+
+  a {
+    color: $red;
+  }
+
+  td {
+    color: $white-smoke;
+  }
+
+  p {
+    color: $white-smoke;
+  }
+  li {
+    color: $white-smoke;
+  }
   .woocommerce-billing-fields {
     .woocommerce-billing-fields__field-wrapper {
       .woocommerce-input-wrapper {

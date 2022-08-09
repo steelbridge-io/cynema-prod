@@ -198,6 +198,10 @@ body header#masthead .nav-link:hover {
 }
 /** min width */
 /** Front Page *****/
+.wpsp-slider-section #sp-woo-product-slider-pro1135.wpsp-product-section .wpsp-product .product-details {
+  background-color: #111111 !important;
+}
+
 #front-page-search {
   margin-top: 3em;
 }
@@ -1503,7 +1507,7 @@ body.product-template-default #sp-wcsp-slider-area-1124 {
 
 /** Woocommerce */
 .woocommerce-notices-wrapper {
-  margin: 5em auto 0 auto;
+  margin: 5em auto 1em auto;
   width: 88%;
 }
 
@@ -1575,6 +1579,27 @@ body.search #main.site-main form input.search-submit {
 }
 
 /** Billing */
+.page-id-175 h2 {
+  color: #f5f5f5;
+}
+.page-id-175 th {
+  color: #f5f5f5;
+}
+.page-id-175 bdi {
+  color: #f5f5f5;
+}
+.page-id-175 a {
+  color: #CC0000;
+}
+.page-id-175 td {
+  color: #f5f5f5;
+}
+.page-id-175 p {
+  color: #f5f5f5;
+}
+.page-id-175 li {
+  color: #f5f5f5;
+}
 .page-id-175 .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper {
   width: 100%;
 }
@@ -1609,6 +1634,21 @@ body.search #main.site-main form input.search-submit {
 
 #wpsp-slider-section.wpsp-slider-section1150 .wpspro-pagination ul li .page-numbers {
   border-color: #CC0000 !important;
+}
+
+.wpsp-slider-section #sp-woo-product-slider-pro1150.wpsp-product-section .wpsp-product .product-details {
+  background-color: #000000 !important;
+}
+
+.product-details .product-details-inner .wpsp-product-title a {
+  color: #CC0000 !important;
+}
+.product-details .product-details-inner .wpsp-product-price .woocommerce-Price-amount.amount {
+  color: #CC0000 !important;
+}
+.product-details .product-details-inner .wpsp-cart-button .product.woocommerce.add_to_cart_inline a.button.add_to_cart_button {
+  color: #f5f5f5 !important;
+  border-color: #ffffff !important;
 }
 
 /** Helpers */

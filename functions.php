@@ -13,6 +13,10 @@ include get_theme_file_path('includes/custom-post-types/video.php');
 // Enqueue needed scripts
 function needed_styles_and_scripts_enqueue() {
 
+	// Load Chromecast API
+	wp_register_script( 'chromecast-api', 'https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1', array(), '', false);
+	//wp_enqueue_script('chromecast-api');
+
 	// Custom script
 	wp_enqueue_script( 'wpbs-custom-script', get_stylesheet_directory_uri() . '/assets/javascript/script.js' , array( 'jquery' ) );
 
@@ -21,6 +25,9 @@ function needed_styles_and_scripts_enqueue() {
 
     // Custom JS
 	wp_enqueue_script('addon-js', get_stylesheet_directory_uri() . '/assets/javascript/custom.js', array(), '', true );
+
+	// Chromecast
+	//wp_enqueue_script( 'chrome-cast', get_stylesheet_directory_uri() . '/assets/javascript/chromecast.js', array(), '', false );
  
 	// enqueue style
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
