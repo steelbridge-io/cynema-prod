@@ -1575,6 +1575,10 @@ body.search #main.site-main form input.search-submit {
   color: #f5f5f5;
 }
 
+body.search-results .excerpt_part {
+  color: #f5f5f5;
+}
+
 /** Registration */
 #gform_wrapper_2 label {
   color: #f5f5f5;

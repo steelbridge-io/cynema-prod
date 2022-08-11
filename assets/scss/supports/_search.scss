@@ -35,3 +35,9 @@ body.search {
     }
   }
 }
+
+body.search-results {
+  .excerpt_part {
+    color: $white-smoke;
+  }
+}
