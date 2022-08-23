@@ -1,5 +1,17 @@
 /** Gravity Form */
 
+#contact-form-container {
+  margin-bottom: 0 !important;
+}
+
+#gform_submit_button_1 {
+  background-color: $red;
+  border-color: $red;
+  color: $white-smoke;
+  border: none;
+  padding: 1em 2em;
+}
+
 .gform_confirmation_wrapper {
   .gform_confirmation_message {
     color: $white-smoke;

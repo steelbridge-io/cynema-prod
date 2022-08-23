@@ -1,50 +1,5 @@
 /** Account CSS */
 
-#post-176 {
-  .vc_column-inner {
-    background-color: rgba(0,0,0,0.8);
-    padding: 1em;
-  }
-}
-
-.woocommerce-order-details {
-  h2 {
-    color: $white-smoke;
-  }
-  table {
-    color: $white-smoke;
-  }
-  a {
-    color: $red;
-  }
-}
-
-.wpb_wrapper {
-  .woocommerce {
-    p {
-      color: $white-smoke;
-      mark {
-        background-color: transparent !important;
-        color: $white-smoke;
-      }
-    }
-    h2 {
-      color: $white-smoke;
-    }
-    address {
-      color: $white-smoke;
-    }
-  }
-}
-
-.dtwpb-form-edit-account > section{
-  padding: 0 !important;
-}
-
-.dtwpb-form-edit-account > section .l-section-h{
-  padding-top: 0 !important;
-}
-
 .page-id-176 {
   #page {
     #primary {
@@ -60,9 +15,6 @@
         border-radius: 0;
       }
       form {
-        margin: 10em auto 0 auto;
-        background-color: rgba(0,0,0,0.8);
-        padding: 1.618em;
         h3 {
           color: $white-smoke;
         }
@@ -71,12 +23,6 @@
         }
         .woocommerce-input-wrapper {
           width: 100%;
-        }
-        button[type="submit"] {
-          background-color: $red;
-          border-radius: 0;
-          border-color: $red;
-          color: $white-smoke;
         }
       }
     }

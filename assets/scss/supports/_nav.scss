@@ -1,5 +1,9 @@
 /** Nav */
 
+.navbar-toggler {
+  background-color: $red !important;
+}
+
 .menu-item.nav-item.wpmenucartli {
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.5);

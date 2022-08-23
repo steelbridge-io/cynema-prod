@@ -1,5 +1,6 @@
 /** Checkout */
 
+
 #check-out-template {
   h3 {
     color: $white-font;
@@ -47,7 +48,7 @@
     background-color: $black-background;
     #primary {
       .woocommerce {
-        padding: 0 0 5em 0;
+        padding: 5em 0;
       }
     }
   }
