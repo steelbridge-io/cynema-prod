@@ -41,10 +41,14 @@
     width: 100%;
     background-color: $red;
     color: $white-smoke;
+    padding-top: 1em;
+    padding-bottom: 1em;
     button {
       background-color: $red !important;
       width: 100%;
       border-radius: 0 !important;
+      border: none;
+      color: $white-smoke;
     }
   }
 }
@@ -74,3 +78,33 @@
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+/** max width */
+@media (max-width: 1399.98px) { }
+
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 991.98px) {
+  .center-button {
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 767.98px) { }
+
+@media (max-width: 575.98px) { }
+
+
+/** min width */
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 1400px) { }
+
+
+

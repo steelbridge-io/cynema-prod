@@ -1,5 +1,11 @@
 /** Gravity Form */
 
+#gform_wrapper_1 .gform_footer {
+  visibility: hidden;
+  position: absolute;
+  left: -100vw;
+}
+
 #contact-form-container {
   margin-bottom: 0 !important;
 }
@@ -10,6 +16,7 @@
   color: $white-smoke;
   border: none;
   padding: 1em 2em;
+  width: 100%;
 }
 
 .gform_confirmation_wrapper {
