@@ -1720,6 +1720,23 @@ body.search-results .excerpt_part {
   }
 }
 /** min width */
+/** AirPlay */
+#airPlayButton {
+  background-image: url(https://cynematv.com/wp-content/uploads/2022/08/apple-air-play.png);
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 100%;
+  margin: 1em auto 0 auto;
+}
+#airPlayButton .airplay {
+  color: #6a6a6a;
+}
+#airPlayButton .airplay:hover {
+  color: #ccc;
+}
+
 /** Helpers */
 .mt-1618 {
   margin-top: 1.618em;

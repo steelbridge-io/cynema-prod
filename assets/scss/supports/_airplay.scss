@@ -1,0 +1,17 @@
+/** AirPlay */
+
+#airPlayButton {
+  background-image: url(https://cynematv.com/wp-content/uploads/2022/08/apple-air-play.png);
+  background-color: $black;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  width: 100%;
+  margin: 1em auto 0 auto;
+  .airplay {
+    color: #6a6a6a;
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
