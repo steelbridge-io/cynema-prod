@@ -140,4 +140,22 @@ function my_remove_lightbox() {
 	remove_theme_support( 'wc-product-gallery-lightbox' );
 }
 
+/**
+ * Change Thank You Redirect Label
+ */
+//add_filter( 'gettext', 'theme_change_comment_field_names', 20, 3 );
 
+function theme_change_comment_field_names( $translated_text, $text, $domain ) {
+
+ switch ( $translated_text ) {
+
+  case 'Thank You URL' :
+
+   $translated_text = __( 'After purchase redirect', $domain );
+   break;
+
+ }
+
+
+ return $translated_text;
+}
