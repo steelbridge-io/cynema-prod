@@ -1,5 +1,43 @@
 /** Shop CSS */
 
+.wc-memberships-products-grant-access {
+  a {
+    color: $red !important;
+  }
+}
+
+.woocommerce-info {
+  border-top-color: $red !important;
+}
+
+.wpsp-product-title {
+  a{
+    h3 {
+      color: $white-smoke !important;
+    }
+  }
+}
+
+.woocommerce-info::before {
+  color: $red !important;
+}
+
+.jp-cc.jp-cc-not-accessible,
+.jp-cc.jp-cc-accessible {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: $red;
+  margin: 1.618em 0;
+  p {
+    a {
+      font-size: 2rem !important;
+      color: $red !important;
+      font-weight: bold !important;
+      margin: 1.618em 0 !important;
+    }
+  }
+}
+
 .vc_btn3.vc_btn3-color-danger, .vc_btn3.vc_btn3-color-danger.vc_btn3-style-flat {
   background-color: $red !important;
 }

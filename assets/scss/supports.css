@@ -1140,6 +1140,37 @@ section.vc_section.sec-banenr-hdr {
 }
 
 /** Shop CSS */
+.wc-memberships-products-grant-access a {
+  color: #CC0000 !important;
+}
+
+.woocommerce-info {
+  border-top-color: #CC0000 !important;
+}
+
+.wpsp-product-title a h3 {
+  color: #f5f5f5 !important;
+}
+
+.woocommerce-info::before {
+  color: #CC0000 !important;
+}
+
+.jp-cc.jp-cc-not-accessible,
+.jp-cc.jp-cc-accessible {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #CC0000;
+  margin: 1.618em 0;
+}
+.jp-cc.jp-cc-not-accessible p a,
+.jp-cc.jp-cc-accessible p a {
+  font-size: 2rem !important;
+  color: #CC0000 !important;
+  font-weight: bold !important;
+  margin: 1.618em 0 !important;
+}
+
 .vc_btn3.vc_btn3-color-danger, .vc_btn3.vc_btn3-color-danger.vc_btn3-style-flat {
   background-color: #CC0000 !important;
 }
@@ -1336,6 +1367,40 @@ section.vc_section.sec-banenr-hdr {
 }
 
 /** Cart */
+.woocommerce mark {
+  background-color: transparent !important;
+}
+
+.woocommerce-order-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.618em;
+}
+.woocommerce-order-details h2 {
+  color: #f5f5f5;
+}
+.woocommerce-order-details .woocommerce-table th {
+  color: #f5f5f5;
+}
+.woocommerce-order-details .woocommerce-table td {
+  color: #f5f5f5;
+}
+
+.woocommerce-customer-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.618em;
+}
+.woocommerce-customer-details h2 {
+  color: #f5f5f5;
+}
+
+#select2-billing_state-results li {
+  color: #000000;
+}
+
+address {
+  color: #f5f5f5;
+}
+
 /* Removes cart Update Button */
 .cart tbody tr td.actions .button[name=update_cart] {
   display: none;
@@ -1735,6 +1800,14 @@ body.search-results .excerpt_part {
 }
 #airPlayButton .airplay:hover {
   color: #ccc;
+}
+
+/** Thank You */
+.woocommerce p {
+  color: #f5f5f5;
+}
+.woocommerce p mark {
+  color: #f5f5f5;
 }
 
 /** Helpers */

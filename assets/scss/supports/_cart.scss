@@ -1,5 +1,46 @@
 /** Cart */
 
+.woocommerce {
+  mark {
+    background-color: transparent !important;
+  }
+}
+
+.woocommerce-order-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.618em;
+  h2 {
+    color: $white-smoke;
+  }
+  .woocommerce-table {
+    th {
+      color: $white-smoke;
+    }
+    td {
+      color: $white-smoke;
+    }
+
+  }
+}
+
+.woocommerce-customer-details {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1.618em;
+  h2 {
+    color: $white-smoke;
+  }
+}
+
+#select2-billing_state-results {
+  li {
+    color: $black;
+  }
+}
+
+address {
+  color: $white-smoke;
+}
+
 /* Removes cart Update Button */
 .cart {
   tbody {
