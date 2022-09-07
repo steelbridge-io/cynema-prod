@@ -1,5 +1,13 @@
 /** Checkout */
 
+.product-name {
+  a {
+    color: $red;
+    &:hover {
+      color: $red;
+    }
+  }
+}
 
 #check-out-template {
   h3 {

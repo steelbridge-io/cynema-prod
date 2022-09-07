@@ -1,0 +1,11 @@
+/** Buttons */
+
+.btn.btn-red {
+  color: $white-smoke;
+  background-color: $red;
+  padding: 1em 2em;
+  border: 1px solid $red;
+  &:hover {
+    color: $white-smoke;
+  }
+}

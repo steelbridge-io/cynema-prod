@@ -1,0 +1,22 @@
+/** Orders */
+
+.order-again {
+  display: none;
+}
+
+.wpb_wrapper {
+  color: $white-smoke !important;
+}
+
+.wp-embedded-content {
+  a {
+    background-color: $red;
+    padding: 1em 2em;
+    border: 2px solid $red;
+    color: $white-smoke;
+  }
+}
+
+.product-quantity {
+  display: none;
+}

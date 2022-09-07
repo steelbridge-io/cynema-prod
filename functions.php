@@ -41,6 +41,12 @@ function needed_styles_and_scripts_enqueue() {
 }
 add_action( 'wp_enqueue_scripts', 'needed_styles_and_scripts_enqueue' );
 
+// Update CSS within in Admin
+function admin_style() {
+ wp_enqueue_style('admin-styles', get_stylesheet_directory_uri() . '/assets/css/admin.css', array(), '', 'all');
+}
+add_action('admin_enqueue_scripts', 'admin_style');
+
 function cc_mime_types($mimes) {
 $mimes['svg'] = 'image/svg+xml';
 return $mimes;
@@ -198,4 +204,55 @@ function auto_complete_virtual_orders( $payment_complete_status, $order_id, $ord
   }
  }
  return $payment_complete_status;
+}
+
+ //add_action('woocommerce_order_details_after_order_table', 'action_order_details_after_order_table', 10, 4 );
+ /*function action_order_details_after_order_table( $order, $sent_to_admin = '', $plain_text = '', $email = '' ) {
+  // Only on "My Account" > "Order View"
+  if ( is_wc_endpoint_url( 'view-order' ) ) {
+   echo  do_shortcode('[get_product_permalink]');
+  }
+ }*/
+
+
+function add_products_my_account_orders_column( $columns ) {
+ $new_columns = array();
+ foreach ( $columns as $key => $name ) {
+  $new_columns[ $key ] = $name;
+
+  // add products after order total column
+  if ( 'order-total' === $key ) {
+   $new_columns['order-products'] = __( 'Products', 'textdomain' );
+  }
+ }
+ return $new_columns;
+}
+add_filter( 'woocommerce_my_account_my_orders_columns', 'add_products_my_account_orders_column' );
+
+function add_products_data_my_account_orders_column( $order ) {
+ //loop through products of the order
+ foreach( $order->get_items() as $item_id => $item ) {
+  $product = apply_filters( 'woocommerce_order_item_product', $order->get_product_from_item( $item ), $item );
+
+  $is_visible        = $product && $product->is_visible();
+  $product_permalink = apply_filters( 'woocommerce_order_item_permalink', $is_visible ? $product->get_permalink( $item ) : '', $item, $order );
+
+  echo apply_filters( 'woocommerce_order_item_name', $product_permalink ? sprintf( '<p><a href="%s">%s</a>', $product_permalink, $item['name'] ) : $item['name'], $item, $is_visible );
+  echo apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf( '&times; %s', $item['qty'] ) . '</strong></p>', $item );
+ }
+}
+add_action( 'woocommerce_my_account_my_orders_column_order-products', 'add_products_data_my_account_orders_column' );
+
+
+add_filter( 'woocommerce_order_item_name', 'display_product_image_in_order_item', 20, 3 );
+function display_product_image_in_order_item( $item_name, $item, $is_visible ) {
+ // Targeting view order pages only
+ if( is_wc_endpoint_url( 'view-order' ) ) {
+  $product   = $item->get_product();
+  $thumbnail = $product->get_image(array( 60, 120));
+  $permalink = get_permalink( $product->get_id() );
+  if( $product->get_image_id() > 0 )
+   $item_name = '<a href="'. $permalink .'" class="item-thumbnail">' . $thumbnail . '</a>&nbsp;Watch&nbsp;' . $item_name;
+ }
+ return $item_name;
 }
