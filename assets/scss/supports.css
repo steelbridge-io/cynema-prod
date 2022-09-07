@@ -1852,6 +1852,14 @@ body.search-results .excerpt_part {
   color: #f5f5f5;
 }
 
+/** Quick View */
+#wqv-quick-view-content .no-display-modal {
+  display: none;
+}
+#wqv-quick-view-content .full-movie-wrapper {
+  display: none;
+}
+
 /** Helpers */
 .mt-1618 {
   margin-top: 1.618em;
