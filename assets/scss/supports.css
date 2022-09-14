@@ -160,7 +160,7 @@ body.search header#masthead {
   background-color: #000000;
 }
 body header#masthead {
-  background-color: transparent;
+  /*background-color: transparent;*/
   box-shadow: none !important;
   padding: 0.74rem 1rem;
   position: absolute;
@@ -1281,6 +1281,16 @@ section.vc_section.sec-banenr-hdr {
   border-radius: 0;
 }
 
+/** max width */
+@media (max-width: 767.98px) {
+  .woocommerce-form.woocommerce-form-login.login {
+    width: 100%;
+  }
+  .woocommerce-form-login .form-row {
+    width: 100%;
+  }
+}
+/** min width */
 /** Checkout */
 .product-name a {
   color: #CC0000;

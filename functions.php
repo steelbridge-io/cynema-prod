@@ -149,15 +149,25 @@ function my_remove_lightbox() {
 /**
  * Change Thank You Redirect Label
  */
-//add_filter( 'gettext', 'theme_change_comment_field_names', 20, 3 );
+add_filter( 'gettext', 'theme_change_comment_field_names', 20, 3 );
 
 function theme_change_comment_field_names( $translated_text, $text, $domain ) {
 
  switch ( $translated_text ) {
 
-  case 'Thank You URL' :
+  case 'Custom Thank You Page' :
 
    $translated_text = __( 'After purchase redirect', $domain );
+   break;
+
+  case 'Custom Thank You Page or Url' :
+
+   $translated_text = __('Select Custom URL for redirect to movie purchased', $domain );
+   break;
+
+  case 'Custom Thank You page' :
+
+   $translated_text = __('Custom redirect page', $domain );
    break;
 
  }

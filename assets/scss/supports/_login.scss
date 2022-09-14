@@ -101,3 +101,39 @@
 .woocommerce-Input.woocommerce-Input--text.input-text.form-control {
   border-radius: 0;
 }
+
+/** max width */
+@media (max-width: 1399.98px) { }
+
+@media (max-width: 1199.98px) { }
+
+@media (max-width: 991.98px) { }
+
+@media (max-width: 767.98px) {
+  .woocommerce-form.woocommerce-form-login.login {
+    width: 100%;
+  }
+  .woocommerce-form-login {
+    .form-row {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 575.98px) { }
+
+
+/** min width */
+@media (min-width: 576px) { }
+
+@media (min-width: 768px) { }
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+@media (min-width: 1400px) { }
+
+
+
+
