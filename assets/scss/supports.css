@@ -1,5 +1,4 @@
-/** Custom CSS **/
-/** Global CSS */
+/** Custom CSS **/ /** Global CSS */
 .page-id-14 {
   background-color: #000000;
 }
@@ -221,7 +220,6 @@ body header#masthead .nav-link:hover {
   body header#masthead .nav-link.nav-link:hover {
     border-color: transparent !important;
   }
-
   #menu-header-menu.navbar-nav {
     align-items: center;
   }
@@ -657,11 +655,9 @@ body.logged-in.admin-bar header {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
-
   .copyright {
     font-size: 0.8px;
   }
-
   .vc_tta-panels .vc_tta-panel {
     background-color: #000000;
   }
@@ -671,11 +667,9 @@ body.logged-in.admin-bar header {
   .vc_tta-panels .vc_tta-panel .vc_tta-panel-body {
     background-color: #000000 !important;
   }
-
   .u-column1.col-1.woocommerce-Address {
     width: 100%;
   }
-
   .u-column2.col-2.woocommerce-Address {
     width: 100%;
   }
@@ -1200,6 +1194,7 @@ section.vc_section.sec-banenr-hdr {
 
 .woocommerce-error li {
   padding-left: 1em !important;
+  color: #000000 !important;
 }
 
 #login-wrapper .pieregWrapper input[type=submit] {
@@ -1423,6 +1418,7 @@ address {
 
 .cart-empty.woocommerce-info {
   border: 3px solid #CC0000 !important;
+  color: #000000;
 }
 
 .button.wc-forward, .button.wc-backward {
@@ -1450,6 +1446,7 @@ address {
   color: #ffffff;
   width: 40%;
   text-align: center;
+  margin-top: 1.618em;
 }
 
 /** Sign Up */
@@ -1489,7 +1486,6 @@ h1.mailpoet-heading {
   .mailpoet_submit {
     margin-top: 1em !important;
   }
-
   #mailpoet_form_1 {
     width: 70% !important;
   }
@@ -1502,11 +1498,9 @@ h1.mailpoet-heading {
   #mailpoet_form_1 form .mailpoet_form_columns .mailpoet_form_column {
     flex-basis: 0 !important;
   }
-
   #join-cynematv.mailpoet-heading {
     text-align: center !important;
   }
-
   #mailpoet_form_1 .mailpoet_form_column:not(:first-child) {
     margin-left: 0px !important;
   }
@@ -1803,8 +1797,9 @@ body.search-results .excerpt_part {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
-  width: 100%;
+  width: 10%;
   margin: 1em auto 0 auto;
+  display: block;
 }
 #airPlayButton .airplay {
   color: #6a6a6a;

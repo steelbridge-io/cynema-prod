@@ -66,6 +66,7 @@ address {
 
 .cart-empty.woocommerce-info {
   border: 3px solid $red !important;
+  color: $black;
 }
 
 .button.wc-forward, .button.wc-backward {
@@ -96,5 +97,6 @@ address {
     color: $white-font;
     width: 40%;
     text-align: center;
+    margin-top: 1.618em
   }
 }
