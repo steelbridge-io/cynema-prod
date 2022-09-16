@@ -1,0 +1,45 @@
+/** Mail Poet */
+
+body.single-mailpoet_page {
+  background-color: $black;
+  #main {
+    padding-top: 7em;
+  }
+  #page {
+    background-color: $black;
+  }
+  #primary {
+    height: 100vh;
+    width: 100%;
+    margin: 2em auto;
+    background-color: $black;
+    .mailpoet_form {
+      margin-top: 3em;
+      .mailpoet_form_hide_on_success {
+        text-align: center;
+      }
+      .mailpoet_text_label {
+        color: $white-smoke;
+      }
+      input[type="submit"] {
+        background-color: $red !important;
+        color: $white-smoke;
+        padding: 1em 2em;
+      }
+    }
+  }
+  header {
+    .entry-title {
+      color: $white-smoke;
+      text-align: center;
+    }
+  }
+}
+
+.mailpoet_text {
+  color: $black !important;
+}
+.mailpoet_validate_success {
+  margin-top: 3em !important;
+  padding-top: 1.618em !important;
+}
