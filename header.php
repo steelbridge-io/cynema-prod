@@ -84,8 +84,10 @@
  <div id="masthead-video" class="<?php echo wp_bootstrap_starter_bg_class(); ?>">
   <div class="container header-video">
     <div class="row">
-     <a href="javascript: history.go(-1)">
-     <i class="lni lni-arrow-left"></i>
+     <!--<a href="javascript: history.go(-1)"> -->
+        <a href="/my-account" title="Go to my account page">
+            <i class="lni lni-arrow-left"></i>
+        </a>
      </a>
     </div>
   </div>
