@@ -115,6 +115,11 @@
 }
 
 /** Nav */
+.navbar-brand a img {
+  max-width: 150px;
+  width: 28%;
+}
+
 .navbar-toggler {
   background-color: #CC0000 !important;
 }
