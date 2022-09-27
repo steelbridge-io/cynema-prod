@@ -64,7 +64,7 @@
 }
 
 .watch-trailer a {
-  color: #ffffff !important;
+  color: #CC0000 !important;
 }
 
 .watch-trailer a:hover {
@@ -377,6 +377,14 @@ body header#masthead .nav-link:hover {
   background: transparent !important;
   border: 4px solid #fff !important;
   color: #F90000 !important;
+}
+
+.btn_webtv a {
+  margin: 0 auto !important;
+}
+
+.contact_btn a {
+  margin: 0 auto !important;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 375px) {
@@ -1774,6 +1782,21 @@ body.search-results .excerpt_part {
   border-color: #ffffff !important;
 }
 
+.EVPLargePlayButtonNormalState {
+  height: 90px !important;
+  width: 90px !important;
+}
+
+.table-cell-fwdevp-button.fwdicon.fwdicon-play::before {
+  font-weight: 900;
+  font-size: 3.5rem;
+}
+
+/*.table-cell-fwdevp-button.fwdicon.fwdicon-play {
+  -moz-box-shadow: inset 0 0 10px $red;
+  -webkit-box-shadow: inset 0 0 10px $red;
+  box-shadow: inset 0 0 10px $red;
+}*/
 /** Social Media */
 .social-media-icons-customer-provided {
   margin: 1em auto 0 auto;
