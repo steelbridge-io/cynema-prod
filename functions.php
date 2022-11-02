@@ -13,6 +13,10 @@ include get_theme_file_path('includes/custom-post-types/video.php');
 // Enqueue needed scripts
 function needed_styles_and_scripts_enqueue() {
 
+  // Add-ons
+  wp_register_style('supports', get_stylesheet_directory_uri() . '/assets/scss/supports.css', array(), '', 'all' );
+  wp_enqueue_style('supports');
+
 	// Custom script
 	wp_enqueue_script( 'wpbs-custom-script', get_stylesheet_directory_uri() . '/assets/javascript/script.js' , array( 'jquery' ) );
 
@@ -28,9 +32,6 @@ function needed_styles_and_scripts_enqueue() {
 	// enqueue Lineicons
 	wp_register_style('lineicons', 'https://cdn.lineicons.com/3.0/lineicons.css', array(), '', 'all' );
 	wp_enqueue_style('lineicons');
- 
-	// Add-ons
-	wp_enqueue_style('custom', get_stylesheet_directory_uri() . '/assets/scss/supports.css', array(), '', 'all' );
  
 	// Animate CSS
 	wp_register_style('animate-css', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css', array(), '', 'all');
@@ -265,4 +266,16 @@ function display_product_image_in_order_item( $item_name, $item, $is_visible ) {
    $item_name = '<a href="'. $permalink .'" class="item-thumbnail">' . $thumbnail . '</a>&nbsp;Watch&nbsp;' . $item_name;
  }
  return $item_name;
+}
+
+/**
+ * Force single word user name. No spaces.
+ */
+add_filter('validate_username' , 'custom_validate_username', 10, 2);
+function custom_validate_username($valid, $username ) {
+ if (preg_match("/\\s/", $username)) {
+  // there are spaces
+  return $valid=false;
+ }
+ return $valid;
 }
